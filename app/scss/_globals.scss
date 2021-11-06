@@ -1,0 +1,49 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    background-color: $paleBlue;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 0.875rem;
+    font-weight: $lightWeight;
+    color: $desaturedBlue;
+    background: url('/images/pattern-background-mobile.svg');
+    background-repeat: repeat-x;
+    text-align: center;
+    @include breakpoint-up(medium) {
+        font-size: 1rem;
+        background: url('/images/pattern-background-desktop.svg');
+        background-repeat: repeat-x;
+    }
+}
+
+// Buttons 
+
+.button {
+    position:relative;
+    display: block;
+    padding: 1.125rem 0rem;
+    background-color: $brightBlue;
+    border-radius: 10px;
+    transition: opacity 250ms ease-in-out;
+    &:hover {
+        opacity: 0.85;
+    }
+}
+
+// Container 
+
+.container {
+    margin: 0 1.5rem;
+    @include breakpoint-up(medium) {
+        margin: 0 2.875rem;
+    }
+}

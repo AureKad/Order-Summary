@@ -1,0 +1,106 @@
+.card {
+    display: inline-block;
+    text-align: center;
+    margin: 4.5rem 1.5rem;
+    max-width: 28.125rem;
+    background-color: $veryPaleBlue;
+    border-radius: 10px;
+    @include breakpoint-up(medium) {
+        margin: 6rem 1.5rem;
+    }
+
+    &__content {
+        border-radius: 1rem;
+        box-shadow: 0px 3px 12px rgba(0,0,0,0.3);
+    }
+    &__heroimage {
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 1rem 1rem 0px 0px ;
+        }
+        margin-bottom:2rem;
+        @include breakpoint-up(medium) {
+            margin-bottom: 3rem;
+        }
+    }
+    h2 {
+        font-size: 1.375rem;
+        color: $darkBlue;
+        font-weight: $heavyWeight;
+        margin:0;
+        margin-bottom: 1.25rem;
+        @include breakpoint-up(medium) {
+            font-size: 1.875rem;
+        }
+    }
+    &__text {
+        padding: 0rem 1.5rem;
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+        @include breakpoint-up(medium) {
+            margin: 0 2rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+    
+    &__annual {
+        display: flex;
+        text-align: left;
+        align-items: center;
+        background-color: $veryPaleBlue;
+        border-radius: 0.3125rem;
+        margin-bottom: 1.25rem;
+        padding: 1rem;
+        @include breakpoint-up(medium) {
+            margin-bottom: 2.125rem;
+        }
+        &__icon {
+            flex: 1;
+        }
+        &__text {
+            h4 {
+                color: $darkBlue;
+                margin:0;
+                margin-bottom: 0.5rem;
+            }
+            flex: 2;
+        }
+        a {
+            flex: 1;
+            text-align: right;
+            color:$brightBlue;
+            font-weight: $normalWeight;
+            transition: opacity 250ms ease-in-out;
+            &:hover {
+                text-decoration:none;
+                opacity: 0.85;
+            }
+        }
+    }
+    &__cta {
+        text-decoration: none;
+        color: $veryPaleBlue;
+        font-weight: $normalWeight;
+        margin-bottom: 1.75rem;
+        box-shadow: 0px 20px 12px rgba(56, 41, 224,0.15);
+        @include breakpoint-up(medium) {
+            margin-bottom: 2.125rem;
+        }
+    }
+    &_cancel {
+        font-weight: $normalWeight;
+        text-decoration: none;
+        position: relative;
+        display: inline-block;
+        margin-bottom: 2.5rem;
+        color: $desaturedBlue;
+        @include breakpoint-up(medium) {
+            margin-bottom: 3rem;
+        }
+        transition: color 250ms ease-in-out;
+        &:hover {
+            color: $darkBlue;
+        }
+    }
+}
