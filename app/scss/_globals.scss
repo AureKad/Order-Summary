@@ -15,12 +15,12 @@ body {
     font-size: 0.875rem;
     font-weight: $lightWeight;
     color: $desaturedBlue;
-    background: url('/images/pattern-background-mobile.svg');
+    background: url('../images/pattern-background-mobile.svg');
     background-repeat: repeat-x;
     text-align: center;
     @include breakpoint-up(medium) {
         font-size: 1rem;
-        background: url('/images/pattern-background-desktop.svg');
+        background: url('../images/pattern-background-desktop.svg');
         background-repeat: repeat-x;
     }
 }
